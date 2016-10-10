@@ -43,8 +43,7 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    init.target.rc \
-    init.variant.rc
+    init.target.rc
 
 # IRDA
 PRODUCT_BOOT_JARS += \
@@ -53,6 +52,10 @@ PRODUCT_BOOT_JARS += \
 # NFC
 PRODUCT_PACKAGES += \
     NfcSony
+
+# Variant linking script
+PRODUCT_COPY_FILES += \
+    device/htc/b2wlj/releasetools/variant_script.sh:install/bin/variant_script.sh
 
 # Ramdisk
 PRODUCT_PACKAGES += \
