@@ -19,8 +19,11 @@ $(call inherit-product, device/htc/b2wlj/full_b2wlj.mk)
 # Enhanced NFC
 $(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
 
-# Inherit some common CM stuff.
+# Inherit some common AICP stuff.
 $(call inherit-product, vendor/aicp/configs/common.mk)
+
+# Inherit telephony stuff.
+$(call inherit-product, vendor/aicp/configs/telephony.mk)
 
 PRODUCT_NAME := aicp_b2wlj
 
